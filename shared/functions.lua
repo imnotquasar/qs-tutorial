@@ -1,3 +1,5 @@
+--- @return nil
+--- @description Returns a debug message to assist with development
 function Debug(...)
     if not Config.Debug then return end
     local msg = '^2[TUTORIAL DEBUG]:^0 '
@@ -12,6 +14,8 @@ function Debug(...)
     print(msg)
 end
 
+--- @return nil
+--- @description Returns an error message to assist with development
 function Error(...)
     local msg = '^1[TUTORIAL ERROR]:^0 '
     for i, v in pairs({ ... }) do
