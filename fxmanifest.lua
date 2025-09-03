@@ -18,7 +18,3 @@ ui_page 'html/index.html'
 files {
     'html/**/**',
 }
-
-escrow_ignore {
-    'shared/config.lua',
-}
